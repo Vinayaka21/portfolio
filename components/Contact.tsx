@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Send, MapPin, Clock, CheckCircle } from "lucide-react";
-import { GithubIcon, LinkedinIcon, XIcon } from "./SocialIcons";
+import { GithubIcon, LinkedinIcon, InstagramIcon } from "./SocialIcons";
 
 const socials = [
   {
