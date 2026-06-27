@@ -1,13 +1,13 @@
 "use client";
 
 import { Mail, Code2, ArrowUp } from "lucide-react";
-import { GithubIcon, LinkedinIcon, XIcon } from "./SocialIcons";
+import { GithubIcon, LinkedinIcon, InstagramIcon } from "./SocialIcons";
 
 const socials = [
   { icon: GithubIcon, label: "GitHub", href: "https://github.com/Vinayaka21" },
   { icon: LinkedinIcon, label: "LinkedIn", href: "https://linkedin.com/in/vinayaka_prasad" },
-  { icon: XIcon, label: "Twitter / X", href: "https://twitter.com/vinayakap" },
-  { icon: Mail, label: "Email", href: "mailto:Vinayakaprasad2001@gmail.com" },
+  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/_vinayaka_prasad" },
+  { icon: Mail, label: "Email", href: "mailto:Vinayakaprasad2001@gmail.com", external: false },
 ];
 
 export function Footer() {
@@ -27,12 +27,12 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-2">
-            {socials.map(({ icon: Icon, label, href }) => (
+            {socials.map(({ icon: Icon, label, href, external = true }) => (
               <a
                 key={label}
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
                 aria-label={label}
                 className="w-9 h-9 flex items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface)] transition-all"
               >

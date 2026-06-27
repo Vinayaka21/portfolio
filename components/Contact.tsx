@@ -21,12 +21,12 @@ const socials = [
     color: "#0a66c2",
   },
   {
-    icon: XIcon,
-    label: "Twitter / X",
-    handle: "@vinayakap",
-    href: "https://twitter.com/vinayakap",
-    color: "#1d9bf0",
-  },
+  icon: InstagramIcon,
+  label: "Instagram",
+  handle: "_vinayaka_prasad",
+  href: "https://www.instagram.com/_vinayaka_prasad",
+  color: "#e1306c",
+},
   {
     icon: Mail,
     label: "Email",
